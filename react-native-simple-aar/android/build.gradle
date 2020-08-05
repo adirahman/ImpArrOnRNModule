@@ -68,13 +68,16 @@ repositories {
     }
     google()
     jcenter()
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
 
-    implementation project(':MyFirstAar-debug')
+   implementation files ('libs/MyFirstAar-debug.aar')
 }
 
 def configureReactNativePom(def pom) {

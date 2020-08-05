@@ -13,6 +13,7 @@ import {
   ScrollView,
   View,
   Text,
+  Button,
   StatusBar,
 } from 'react-native';
 
@@ -35,7 +36,7 @@ const App: () => React$Node = () => {
           onPress={() => {
             SimpleAarModule.callAarActivity();
           }}
-          title="Show TOAST"
+          title="Go Activity inside AAR"
         />
       </View>
     </>
